@@ -59,7 +59,7 @@ const MainTab = () => {
         {videoPlaying && (
           <video
             id="mainVideo"
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            src=""
             width="100%"
             height="100%"
             controls

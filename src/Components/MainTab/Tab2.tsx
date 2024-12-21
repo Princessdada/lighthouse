@@ -9,13 +9,11 @@ const Tab2 = () => {
   return (
     <Container
       maxWidth="full"
-      px={[4, 8, 12]} // Adjust padding for responsiveness
+      px={[4, 8, 12]}
       py={[8, 12, 16]}
       bg="#FCEDC6"
       color="#1D2130">
-      <Flex
-        direction={["column", "row"]} // Column on mobile, row on larger screens
-        gap={8}>
+      <Flex direction={["column", "row"]} gap={8}>
         {/* Left Section */}
         <Box flex={[1, 3]} padding={4}>
           <Flex align="center" gap={4}>
@@ -27,8 +25,8 @@ const Tab2 = () => {
           <Box mt={4}>
             <Heading
               lineHeight="1.2"
-              fontSize={["2xl", "3xl", "4xl"]} // Adjust font size for responsiveness
-            >
+              fontSize={["xl", "3xl", "4xl"]}
+              justifyContent={"center"}>
               Some services we provide for our children
             </Heading>
             <Text fontSize={["sm", "md"]} mt={4}>
