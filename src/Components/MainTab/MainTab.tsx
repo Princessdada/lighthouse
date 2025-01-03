@@ -12,6 +12,8 @@ import img1 from "../Image/BG Image.png";
 import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
+import Tab4 from "./Tab4";
+import Tab5 from "./Tab5";
 
 const MainTab = () => {
   const [videoPlaying, setVideoPlaying] = useState(false);
@@ -79,6 +81,10 @@ const MainTab = () => {
       <Tab2 />
       {/* Tab 4 */}
       <Tab3></Tab3>
+      {/* Tab 5 */}
+      <Tab4></Tab4>
+      {/* Tab 6 */}
+      <Tab5></Tab5>
     </>
   );
 };
