@@ -14,6 +14,7 @@ import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
 import Tab4 from "./Tab4";
 import Tab5 from "./Tab5";
+import Footer from "../Footer/footer";
 
 const MainTab = () => {
   const [videoPlaying, setVideoPlaying] = useState(false);
@@ -85,6 +86,8 @@ const MainTab = () => {
       <Tab4></Tab4>
       {/* Tab 6 */}
       <Tab5></Tab5>
+      {/* Footer */}
+      <Footer></Footer>
     </>
   );
 };
