@@ -35,7 +35,9 @@ const Tab1 = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
             facilis!
           </Text>
-          <Button bg="#F2C94C">Learn More</Button>
+          <Button w={"142px"} h={"51px"} bg="#F2C94C">
+            Learn More
+          </Button>
         </Box>
         <Box flex={2} padding={12}>
           <Image width="80%" height="100%" borderRadius={10} src={img1}></Image>
