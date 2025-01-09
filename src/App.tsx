@@ -5,7 +5,7 @@ import MainTab from "./Components/MainTab/MainTab";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 import Media from "./Components/Media";
-import Contact from "./Components/Contact";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (

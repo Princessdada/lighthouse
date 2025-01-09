@@ -81,7 +81,15 @@ const Media = () => {
           </VStack>
 
           {/* Third Column */}
-          <VStack align="start" gap={6} bg="white" p={6} borderRadius="lg">
+          <VStack
+            align="start"
+            w={"90%"}
+            h={"100%"}
+            ml={"20px"}
+            gap={6}
+            bg="white"
+            p={6}
+            borderRadius="lg">
             {news.map((item, index) => (
               <HStack
                 key={index}
