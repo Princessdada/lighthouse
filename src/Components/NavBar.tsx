@@ -1,9 +1,10 @@
 import { HStack, Image, Text, Button, Flex, Container } from "@chakra-ui/react";
 import logo from "../Components/Image/light-out-logo-yellow.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const NavBar = () => {
   const [active, setActive] = useState("Home");
+  const navigate = useNavigate();
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
@@ -11,7 +12,9 @@ const NavBar = () => {
     { name: "Media", path: "/media" },
     { name: "Contact", path: "/contact" },
   ];
-
+  const handleDonateClick = () => {
+    navigate("/donate");
+  };
   return (
     <Container pl={10} pr={10}>
       <HStack px={5} py={4} justify="space-between" align="center" width="100%">
@@ -38,7 +41,9 @@ const NavBar = () => {
         </Flex>
 
         {/* End: Button */}
-        <Button colorScheme="blue">Donate</Button>
+        <Button onClick={handleDonateClick} colorScheme="blue">
+          Donate
+        </Button>
       </HStack>
     </Container>
   );

@@ -6,6 +6,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 import Media from "./Components/Media";
 import Contact from "./Components/Contact/Contact";
+import Donate from "./Components/Donate/Donate";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/what-we-do" element={<WhatWeDo />} />
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
       </Router>
     </>
