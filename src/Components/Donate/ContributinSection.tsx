@@ -16,21 +16,22 @@ const ContributionSection = () => {
     <>
       <Box
         bg={"#fff"}
-        color={"#1D2130"}
+        color={"#525560"}
         w={"100%"}
         borderBottom="1px solid #E5E5E5">
         <Box p="50px" w="100%">
           <Flex mt={"30px"}>
-            <Grid templateColumns="1fr 1fr " w="100%" gap={8}>
-              <VStack ml={"30px"} align={"start"}>
+            <Grid templateColumns="1fr 1fr " w="100%" gap={10}>
+              <VStack ml={"30px"} align={"start"} m={"10px"}>
                 <Heading
+                  color={"#1D2130"}
                   fontSize="48px"
                   fontWeight="700"
                   lineHeight={"57.6px"}
                   mb={4}>
                   How you can contribute to caring for our kids
                 </Heading>
-                <Text fontSize="md" color="#525560" mb={20}>
+                <Text fontSize="16px" mb={20} mr={10}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique. Duis
                   cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
@@ -39,7 +40,7 @@ const ContributionSection = () => {
                   tristique posuere.
                 </Text>
               </VStack>
-              <HStack align={"start"}>
+              <HStack align={"start"} m={"10px"} mr={10}>
                 <Tabs.Root defaultValue="overview">
                   <Tabs.List>
                     <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
@@ -71,10 +72,11 @@ const ContributionSection = () => {
         </Box>
       </Box>
       {/* // Section 2 */}
-      <Box bg={"#fff"} color={"#1D2130"} p="50px" w="100%">
+      <Box bg={"#fff"} color={"#525560"} p="70px" w="100%">
         <Flex>
-          <Grid templateColumns="1fr 1fr 1fr" w="100%" gap={8}>
+          <Grid templateColumns="1fr 1fr 1fr" w="100%" gap={12}>
             <Heading
+              color={"#1D2130"}
               fontSize="48px"
               fontWeight="700"
               lineHeight={"57.6px"}
@@ -83,7 +85,7 @@ const ContributionSection = () => {
             </Heading>
 
             {/* Left Column */}
-            <Text flex={1} fontSize="md">
+            <Text flex={1} fontSize="16px" mr={10}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse varius enim in eros elementum tristique. Duis cursus,
               mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
@@ -91,7 +93,7 @@ const ContributionSection = () => {
             </Text>
 
             {/* Right Column */}
-            <Text flex={1} fontSize="md">
+            <Text flex={1} fontSize="16px" mr={10}>
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere. Aenean faucibus nibh et
               justo cursus id rutrum lorem imperdiet.

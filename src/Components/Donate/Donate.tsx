@@ -2,6 +2,8 @@ import { Box, Button, Grid, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import img from "../Image/Image (5).png";
 import ContributionSection from "./ContributinSection";
+import Tab5 from "../MainTab/Tab5";
+import Footer from "../Footer/footer";
 const Donate = () => {
   return (
     <>
@@ -51,6 +53,8 @@ const Donate = () => {
         </Grid>
       </Box>
       <ContributionSection></ContributionSection>
+      <Tab5></Tab5>
+      <Footer></Footer>
     </>
   );
 };
