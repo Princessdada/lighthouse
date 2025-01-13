@@ -73,7 +73,7 @@ const Page2: React.FC = () => {
           w={"950px"}
           h={"450px"}
           borderRadius="lg"
-          boxShadow="lg"
+          boxShadow="sm"
           alignContent={"center"}>
           <Grid
             templateColumns={["1fr", "1fr 1fr"]}
