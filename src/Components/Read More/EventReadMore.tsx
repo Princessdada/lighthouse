@@ -5,10 +5,12 @@ import {
   Flex,
   Grid,
   Heading,
+  HStack,
   Image,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
+import { LuMapPin, LuCalendar } from "react-icons/lu";
 import img from "../Image/unsplash_SBIak0pKUIE.png";
 import Footer from "../Footer/footer";
 const EventReadMore = () => {
@@ -21,7 +23,7 @@ const EventReadMore = () => {
         display="flex"
         justifyContent="center"
         minH="50vh">
-        <Box w={"700px"} display="flex" justifyContent="center">
+        <Box w={"700px"} textAlign="left">
           <Heading
             fontWeight={700}
             fontSize={["32px", "36px", "48px"]}
@@ -29,6 +31,13 @@ const EventReadMore = () => {
             fontFamily="Roboto">
             A day with our wonderful children
           </Heading>
+
+          <HStack pt={10}>
+            <LuMapPin />
+            <Text mr={5}>Opp Opolo round about, Yenagoa, Bayelsa, Nigeria</Text>
+            <LuCalendar />
+            <Text>April 13, 2022 8:30 AM</Text>
+          </HStack>
         </Box>
       </Container>
       {/* // Section 2 */}
