@@ -17,6 +17,7 @@ import Tab3 from "../MainTab/Tab3";
 import Tab5 from "../MainTab/Tab5";
 import Footer from "../Footer/footer";
 import SpecialNeeds from "./SpecialNeeds";
+import Section from "../Section";
 export const services = [
   {
     icon: icon1,
@@ -60,36 +61,16 @@ const WhatWeDo = () => {
     <>
       <Box p={8} bg="white" color={"#1D2130"} fontFamily={"Roboto"}>
         <Grid
-          templateColumns={["1fr", "1fr", "0.5fr 3fr 2fr"]}
+          templateColumns={["1fr", "1fr", "3fr 2fr"]}
           gap={8}
           alignItems="start"
           w="100%">
           {/* First Column */}
-          <Box
-            mt={"10px"}
-            alignSelf={"start"}
-            height="2px"
-            width="60px"
-            bg="#1D2130"
-            borderRadius="full"
-            ml={[0, 0, 4]}
+          <Section
+            subheading="KNOW ABOUT US"
+            heading="We are working cross country"
+            text1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis dolor consequuntur eos modi reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque nisi, alias quia corporis harum?"
           />
-
-          {/* Second Column */}
-          <VStack align="start" m={"30px"}>
-            <Text fontSize="sm" fontWeight="bold">
-              KNOW ABOUT US
-            </Text>
-            <Text fontSize="4xl" fontWeight="bold" pb={"10px"}>
-              We are working cross country
-            </Text>
-            <Text color={"#525560"} fontSize={"16px"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              quis dolor consequuntur eos modi reiciendis! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Minima itaque nisi, alias quia
-              corporis harum?
-            </Text>
-          </VStack>
 
           {/* Third Column */}
           <VStack align="start">
