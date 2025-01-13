@@ -15,7 +15,10 @@ import img3 from "./Image/Image (4).png";
 import Footer from "./Footer/footer";
 import Tab3 from "./MainTab/Tab3";
 import Tab5 from "./MainTab/Tab5";
+import { useHandleReadMore } from "./Hooks/useHandleReadMore";
+
 const Media = () => {
+  const handleReadMore = useHandleReadMore();
   const news = [
     {
       image: img1,
@@ -75,7 +78,11 @@ const Media = () => {
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.
             </Text>
-            <Button w={"142px"} h={"51px"} bg="#F2C94C">
+            <Button
+              onClick={handleReadMore}
+              w={"142px"}
+              h={"51px"}
+              bg="#F2C94C">
               Read More
             </Button>
           </VStack>

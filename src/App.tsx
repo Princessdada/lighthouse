@@ -7,7 +7,8 @@ import WhatWeDo from "./Components/WhatWeDo/WhatWeDo";
 import Media from "./Components/Media";
 import Contact from "./Components/Contact/Contact";
 import Donate from "./Components/Donate/Donate";
-
+import ReadMore from "./Components/Read More/ReadMore";
+import EventReadMore from "./Components/Read More/EventReadMore";
 const App = () => {
   return (
     <>
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/media" element={<Media />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/readmore" element={<ReadMore />} />
+          <Route path="/eventreadmore" element={<EventReadMore />} />
         </Routes>
       </Router>
     </>

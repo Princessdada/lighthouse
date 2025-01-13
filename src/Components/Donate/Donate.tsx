@@ -4,10 +4,19 @@ import img from "../Image/Image (5).png";
 import ContributionSection from "./ContributinSection";
 import Tab5 from "../MainTab/Tab5";
 import Footer from "../Footer/footer";
+import { useNavigate } from "react-router-dom";
+import { useHandleReadMore } from "../Hooks/useHandleReadMore";
+
 const Donate = () => {
+  const handleReadMore = useHandleReadMore();
   return (
     <>
-      <Box p={8} bg="#FCEDC6" color={"#1D2130"} h={"576px"}>
+      <Box
+        p={8}
+        bg="#FCEDC6"
+        color={"#1D2130"}
+        h={"576px"}
+        fontFamily={"Roboto"}>
         <Grid
           mt={"30px"}
           templateColumns={["1fr", "1fr", "0.5fr 3fr 2fr"]}
@@ -37,7 +46,11 @@ const Donate = () => {
               When you donate, you’re supporting effective care to children with
               special needs—an investment in the leaders of tomorrow.
             </Text>
-            <Button w={"142px"} h={"51px"} bg="#F2C94C">
+            <Button
+              onClick={handleReadMore}
+              w={"142px"}
+              h={"51px"}
+              bg="#F2C94C">
               Read More
             </Button>
           </VStack>

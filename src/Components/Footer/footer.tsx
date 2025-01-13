@@ -15,91 +15,97 @@ const Footer = () => {
     alert("Subscribed successfully!");
   };
   return (
-    <Box bg={"#000"} color={"#fff"} p={20}>
+    <Box bg={"#000"} color={"#fff"} p={[6, 10, 20]} fontFamily={"Roboto"}>
       <Grid
-        templateColumns={["1fr", "1fr 1fr", "1fr 3fr 3fr"]}
-        gap={6}
+        templateColumns={["1fr", "1fr", "1fr 3fr 3fr"]}
+        gap={[4, 6]}
         alignItems={"start"}>
         {/* Logo Section */}
         <VStack align={"start"}>
-          <Text fontSize={"lg"} fontWeight={"bold"}>
+          <Text fontSize={["md", "lg"]} fontWeight={"bold"}>
             lightout/
           </Text>
         </VStack>
 
         {/* Links Section */}
-        <Grid templateColumns={"repeat(3, 1fr)"} gap={4}>
+        <Grid
+          templateColumns={["1fr", "repeat(3, 1fr)"]}
+          gap={[2, 4]}
+          textAlign={["center", "left"]}>
           {/* Column 1 */}
-          <VStack align={"start"} gap={2}>
-            <Link fontSize={"sm"} fontWeight={"bold"} href="/">
+          <VStack align={["center", "start"]} gap={2}>
+            <Link fontSize={["sm", "md"]} fontWeight={"bold"} href="/">
               Home
             </Link>
-            <Link fontSize={"sm"} href="about-us">
+            <Link fontSize={["sm", "md"]} href="about-us">
               About us
             </Link>
-            <Link fontSize={"sm"} href="team">
+            <Link fontSize={["sm", "md"]} href="team">
               Team
             </Link>
-            <Link fontSize={"sm"} href="what-we-do">
+            <Link fontSize={["sm", "md"]} href="what-we-do">
               What we do
             </Link>
-            <Link fontSize={"sm"} href="contact">
+            <Link fontSize={["sm", "md"]} href="contact">
               Contact
             </Link>
           </VStack>
 
           {/* Column 2 */}
-          <VStack align={"start"} gap={2}>
-            <Text fontSize={"sm"} fontWeight={"bold"}>
+          <VStack align={["center", "start"]} gap={2}>
+            <Text fontSize={["sm", "md"]} fontWeight={"bold"}>
               More
             </Text>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Projects
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Events
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Donate
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Blog
             </Link>
           </VStack>
 
           {/* Column 3 */}
-          <VStack align={"start"} gap={2}>
-            <Text fontSize={"sm"} fontWeight={"bold"}>
+          <VStack align={["center", "start"]} gap={2}>
+            <Text fontSize={["sm", "md"]} fontWeight={"bold"}>
               Connect
             </Text>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Facebook
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Instagram
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               Twitter
             </Link>
-            <Link fontSize={"sm"} href="">
+            <Link fontSize={["sm", "md"]} href="">
               LinkedIn
             </Link>
           </VStack>
         </Grid>
 
         {/* Subscribe Section */}
-        <VStack align={"start"} gap={4}>
-          <Text fontSize={"30px"} fontWeight={700}>
+        <VStack align={["center", "start"]} gap={4}>
+          <Text
+            fontSize={["lg", "2xl", "30px"]}
+            fontWeight={700}
+            textAlign={["center", "left"]}>
             Subscribe to get latest updates
           </Text>
-          <Flex>
+          <Flex flexDirection={["column", "row"]} gap={[4, 2]}>
             <Input
               placeholder="Your email"
               size={"md"}
               bg={"#000"}
               color={"#fff"}
               borderBlockColor={"#EBF0F94D"}
-              w={"456px"}
+              w={["100%", "300px", "456px"]}
               h={"64px"}
               borderRadius={"md"}
             />

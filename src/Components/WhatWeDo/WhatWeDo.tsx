@@ -16,49 +16,49 @@ import {
 import Tab3 from "../MainTab/Tab3";
 import Tab5 from "../MainTab/Tab5";
 import Footer from "../Footer/footer";
-
+import SpecialNeeds from "./SpecialNeeds";
+export const services = [
+  {
+    icon: icon1,
+    title: "Family support",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    icon: icon2,
+    title: "Health benefits",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    icon: icon3,
+    title: "Education",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    icon: icon4,
+    title: "Basic amenities",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    icon: icon1,
+    title: "Therapy",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+  {
+    icon: icon2,
+    title: "Public outreach",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+  },
+];
 const WhatWeDo = () => {
-  const services = [
-    {
-      icon: icon1,
-      title: "Family support",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-    {
-      icon: icon2,
-      title: "Health benefits",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-    {
-      icon: icon3,
-      title: "Education",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-    {
-      icon: icon4,
-      title: "Basic amenities",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-    {
-      icon: icon1,
-      title: "Therapy",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-    {
-      icon: icon2,
-      title: "Public outreach",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
-    },
-  ];
   return (
     <>
-      <Box p={8} bg="white" color={"#1D2130"}>
+      <Box p={8} bg="white" color={"#1D2130"} fontFamily={"Roboto"}>
         <Grid
           templateColumns={["1fr", "1fr", "0.5fr 3fr 2fr"]}
           gap={8}
@@ -110,20 +110,12 @@ const WhatWeDo = () => {
         </HStack>
         <Grid templateColumns={["1fr", "1fr 1fr", "repeat(3, 1fr)"]} gap={8}>
           {services.map((service, index) => (
-            <HStack key={index} gap={4} align="start" p={4} borderRadius="md">
-              {/* Image Section */}
-              <Box p={3} borderRadius="md">
-                <Image src={service.icon} boxSize={8} alt={service.title} />
-              </Box>
-
-              {/* Text Section */}
-              <VStack align="start" gap={1}>
-                <Text fontWeight="bold" fontSize="lg">
-                  {service.title}
-                </Text>
-                <Text fontSize="sm">{service.description}</Text>
-              </VStack>
-            </HStack>
+            <SpecialNeeds
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
           ))}
         </Grid>
       </Box>

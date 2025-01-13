@@ -4,6 +4,7 @@ import icon2 from "../Icons/Icon (1).png";
 import icon3 from "../Icons/Icon (2).png";
 import icon4 from "../Icons/Icon (4).png";
 import img from "../Image/unsplash_SBIak0pKUIE.png";
+import Section from "../Section";
 
 const Tab2 = () => {
   return (
@@ -16,24 +17,11 @@ const Tab2 = () => {
       <Flex direction={["column", "row"]} gap={8}>
         {/* Left Section */}
         <Box flex={[1, 3]} padding={4}>
-          <Flex align="center" gap={4}>
-            <Box height="2px" width="72px" bg="#1D2130" borderRadius="full" />
-            <Text fontFamily="Roboto" fontWeight={700} fontSize="16px">
-              What We Do
-            </Text>
-          </Flex>
-          <Box mt={4}>
-            <Heading
-              lineHeight="1.2"
-              fontSize={["xl", "3xl", "4xl"]}
-              justifyContent={"center"}>
-              Some services we provide for our children
-            </Heading>
-            <Text fontSize={["sm", "md"]} mt={4}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
-              eum aut, eaque repellat sed minima.
-            </Text>
-          </Box>
+          <Section
+            subheading="What We Do"
+            heading="Some services we provide for our children"
+            text1="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore eum aut, eaque repellat sed minima."
+          />
           {/* Icons and Descriptions */}
           {[
             { icon: icon4, title: "Family Support" },
@@ -41,12 +29,14 @@ const Tab2 = () => {
             { icon: icon2, title: "Scholarships" },
             { icon: icon3, title: "Therapy" },
           ].map((item, idx) => (
-            <Box mt={6} key={idx}>
+            <Box key={idx} ml={["0", "0", 65]}>
               <Flex align="center" gap={4}>
                 <Image src={item.icon} alt={item.title} boxSize="24px" />
-                <Heading fontSize="lg">{item.title}</Heading>
+                <Heading textAlign={"left"} fontSize="lg">
+                  {item.title}
+                </Heading>
               </Flex>
-              <Text ml="40px" mt={2}>
+              <Text textAlign={"left"} ml="40px" mt={2} mb={3}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                 reprehenderit in non officia sit esse.
               </Text>

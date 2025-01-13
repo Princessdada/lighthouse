@@ -11,7 +11,7 @@ import Footer from "../Footer/footer";
 
 const AboutUs = () => {
   return (
-    <Box>
+    <Box fontFamily={"Roboto"}>
       <Page1></Page1>
       <Page2></Page2>
       <Team></Team>

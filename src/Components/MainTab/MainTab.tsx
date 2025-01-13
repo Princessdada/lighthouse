@@ -31,7 +31,7 @@ const MainTab = () => {
 
   return (
     <>
-      <Container maxW="full" p={0} position="relative">
+      <Container maxW="full" p={0} position="relative" fontFamily={"Roboto"}>
         {/* Background Image */}
         <Image src={img1} alt="Background" width="100%" height="auto" />
 
@@ -76,18 +76,20 @@ const MainTab = () => {
           />
         )}
       </Container>
-      {/* Page 2 */}
-      <Tab1 />
-      {/* Page 3 */}
-      <Tab2 />
-      {/* Tab 4 */}
-      <Tab3></Tab3>
-      {/* Tab 5 */}
-      <Tab4></Tab4>
-      {/* Tab 6 */}
-      <Tab5></Tab5>
-      {/* Footer */}
-      <Footer></Footer>
+      <Box fontFamily={"Roboto"}>
+        {/* Page 2 */}
+        <Tab1 />
+        {/* Page 3 */}
+        <Tab2 />
+        {/* Tab 4 */}
+        <Tab3></Tab3>
+        {/* Tab 5 */}
+        <Tab4></Tab4>
+        {/* Tab 6 */}
+        <Tab5></Tab5>
+        {/* Footer */}
+        <Footer></Footer>
+      </Box>
     </>
   );
 };
