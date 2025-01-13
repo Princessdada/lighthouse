@@ -2,8 +2,10 @@ import { Container, Flex } from "@chakra-ui/react";
 import Section from "../Section";
 import Card from "../Card";
 import img1 from "../Image/BG Image.png";
+import { useHandleReadMore } from "../Hooks/useHandleReadMore";
 
 const Tab3 = () => {
+  const readmore = useHandleReadMore();
   const cardData = [
     {
       title: "Mission smile 1k: Outdoor charity",
@@ -11,6 +13,7 @@ const Tab3 = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: img1,
       buttonText: "Learn More",
+      onClick: readmore,
     },
     {
       title: "Weekly excursions",
@@ -18,6 +21,7 @@ const Tab3 = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: img1,
       buttonText: "Learn More",
+      onClick: readmore,
     },
     {
       title: "Monthly public awareness",
@@ -25,6 +29,7 @@ const Tab3 = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: img1,
       buttonText: "Learn More",
+      onClick: readmore,
     },
   ];
 
@@ -57,6 +62,7 @@ const Tab3 = () => {
             description={card.description}
             image={card.image}
             buttonText={card.buttonText}
+            onClick={card.onClick}
           />
         ))}
       </Flex>
