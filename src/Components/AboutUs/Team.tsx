@@ -46,37 +46,28 @@ const Team: React.FC<TeamProps> = ({ members }) => {
             <Text fontSize="sm" mb={4}>
               {member.role}
             </Text>
-            <Box display="flex" justifyContent="center" gap={4}>
-              {/* <IconButton
-                as="a"
+            <Box display="flex" justifyContent="center" gap={2}>
+              <Link
                 href={member.socialLinks.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Facebook"
-                icon={<LuFacebook />}
-                size="lg"
-                variant="ghost"
-              />
-              <IconButton
-                as="a"
+                aria-label="Facebook">
+                <LuFacebook color={"#000"} size={20} />
+              </Link>
+              <Link
                 href={member.socialLinks.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Twitter"
-                icon={<LuTwitter />}
-                size="lg"
-                variant="ghost"
-              />
-              <IconButton
-                as="a"
+                aria-label="Twitter">
+                <LuTwitter color={"#000"} size={20} />
+              </Link>
+              <Link
                 href={member.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                icon={<LuLinkedin />}
-                size="lg"
-                variant="ghost"
-              /> */}
+                aria-label="LinkedIn">
+                <LuLinkedin color={"#000"} size={20} />
+              </Link>
             </Box>
           </Box>
         ))}
