@@ -10,7 +10,7 @@ import Footer from "../Footer/footer";
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Leonard John Davies",
+    name: "Dolphin Senior High",
     role: "Cofounder, CEO",
     image: img1,
     socialLinks: {
@@ -20,7 +20,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Ebute Elefun High School",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -30,7 +30,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Lafiaji Senior High",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -40,7 +40,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Lafiaji Senior High",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -50,7 +50,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Babcock University High School",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -60,7 +60,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Oxbridge Tutorial College",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -70,7 +70,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Queen’s College",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {
@@ -80,7 +80,17 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    name: "Francis Weber",
+    name: "Greensprings School",
+    role: "Vice Chairman",
+    image: img1,
+    socialLinks: {
+      facebook: "https://www.facebook.com",
+      twitter: "https://www.twitter.com",
+      linkedin: "https://www.linkedin.com",
+    },
+  },
+  {
+    name: "King’s College",
     role: "Vice Chairman",
     image: img1,
     socialLinks: {

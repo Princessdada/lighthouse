@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import img1 from "../Image/BG Image.png";
+import img1 from "../Image/Students stunned by the Dance performance.jpg";
 import Tab1 from "./Tab1";
 import Tab2 from "./Tab2";
 import Tab3 from "./Tab3";
@@ -50,9 +50,14 @@ const MainTab = () => {
           zIndex={1}
           textAlign="center"
           px={[4, 8]}>
-          <Text color="white" fontSize={["xl", "3xl"]} fontWeight="bold" mb={4}>
-            Watch Our Story
-          </Text>
+          <Heading
+            color="white"
+            fontSize={["xl", "5xl"]}
+            fontWeight="bold"
+            lineHeight={1.5}
+            mb={8}>
+            LIGHTOUT HIGHSCHOOL INITIATIVE
+          </Heading>
           <Button colorScheme="red" size="lg" onClick={handlePlay} zIndex={2}>
             ▶ Play
           </Button>

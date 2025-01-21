@@ -61,25 +61,64 @@ const WhatWeDo = () => {
     <>
       <Box p={8} bg="white" color={"#1D2130"} fontFamily={"Roboto"}>
         <Grid
-          templateColumns={["1fr", "1fr", "3fr 2fr"]}
+          templateColumns={["1fr", "1fr", "2fr 2fr"]}
           gap={8}
           alignItems="start"
           w="100%">
           {/* First Column */}
           <Section
             subheading="KNOW ABOUT US"
-            heading="We are working cross country"
-            text1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis dolor consequuntur eos modi reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque nisi, alias quia corporis harum?"
+            heading="Empowering Students with Values, Financial Literacy, and Life Skills Through Engaging Concerts"
           />
+          <Text fontSize={"m"} pt={8} lineHeight={"1.8"}>
+            <Text>
+              We organize LightOut concerts across secondary schools and
+              colleges in the country.
+            </Text>
+            <Text>
+              We have so far held nineteen (19) editions of these concert
+              experiences in schools, reaching over 28,000 students.
+            </Text>
 
-          {/* Third Column */}
+            <Text>
+              {" "}
+              Some of the schools are Kings College, Queens College,
+              Greensprings School, Dansol High School, Lafiaji High School,
+              Oxbridge Tutorial College as well as various youth groups and
+              teenage camps.
+            </Text>
+
+            <Text>
+              The concert excitement helps to forge a connection with the
+              students; this connection is what then eases the advocacy of
+              values that we really seek to communicate to them integrity,
+              stewardship, abstinence and delayed gratification.
+            </Text>
+
+            <Text>
+              We educate the students on the dangers of drug use and the
+              importance of abstinence in preventing abuse, transmission of
+              STDs, teenage pregnancies and maternal mortality. We also provide
+              the girls with sanitary pads.
+            </Text>
+
+            <Text>
+              Through our partnerships with financial institutions, we actively
+              engage students in financial literacy games that promote valuable
+              money habits, such as the importance of saving.. Additionally, we
+              have professionals from partner brands address and creatively
+              educate the students on these and more topics."
+            </Text>
+          </Text>
+
+          {/* Third Column
           <VStack align="start">
             <Image
               src={img}
               w={"300px"}
               h={"300px"}
               borderRadius={"10px"}></Image>
-          </VStack>
+          </VStack> */}
         </Grid>
       </Box>
       <Box bg={"#FCEDC6"} color={"#1D2130"}>

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Logo from "../Logo/Logo.png";
 import React from "react";
-import img1 from "../Image/BG Image.png";
+import img1 from "../Image/Gaise Baba with Prefects at Greenspring schools.jpg";
 import Section from "../Section";
 
 const Tab1 = () => {
@@ -19,9 +19,24 @@ const Tab1 = () => {
         <Box padding={10} flex={3} textAlign={["left"]}>
           <Section
             subheading="Know About Us"
-            heading="We provide a place for children with special needs"
-            text1="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex repellat quisquam exercitationem totam? Dolore, quaerat."
-            text2="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, facilis!"
+            heading="Distribution of the book, Anomaly, at Temple Secondary School"
+            text1="In 2024, the Lightout HighSchool Initiative continued its mission to empower and inspire Nigerian teen students through music, arts, and impactful campaigns, reaching new heights in engagement, education, and
+social impact. With a commitment to
+fostering creativity, social and personal
+development, and environmental
+responsibility, LightOut delivered
+transformative experiences to over a
+thousand students across Lagos"
+            text2="The year began witha visit to Temple
+Secondary School, where 400+ students
+were immersed in a unique blend of
+music, arts, and thought-provoking
+discussions about personal growth,
+values such as delayed gratification,
+abstinence, and community
+responsibility. This visit set the tone for a
+year of meaningful interactions and
+engagement."
             buttonText="Learn More"
             onButtonClick={() => alert("Button Clicked")}
           />

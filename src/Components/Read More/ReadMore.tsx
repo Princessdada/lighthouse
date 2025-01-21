@@ -10,11 +10,9 @@ import {
   Grid,
 } from "@chakra-ui/react";
 import Section from "../Section";
-
 import img from "../Image/Image (4).png";
 import SpecialNeeds from "../WhatWeDo/SpecialNeeds";
 import { services } from "../WhatWeDo/WhatWeDo";
-
 import Footer from "../Footer/footer";
 import Tab5 from "../MainTab/Tab5";
 import Tab3 from "../MainTab/Tab3";
@@ -37,11 +35,29 @@ const ReadMore = () => {
           {/* First Section */}
           <Section
             subheading="OUR PROJECT"
-            heading="Mission Smile 1k Outdoor charity outreach"
-            text1="Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien, accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in viverra mi ut quisque. In sollicitudin sapien, vel nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere magna eget bibendum amet, nisi eu id."
-            text3="Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet tincidunt scelerisque aliquam. Luctus porttitor elit vel sapien, accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in viverra mi ut quisque. In sollicitudin sapien, vel nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum amet, nisi eu id.
-Consectetur feugiat quis hac enim nullam in enim. Tellus nisi dapibus libero rutrum vitae nisl, cursus in sed. Egestas mi ultricies et consectetur vel non. Augue enim enim, eget ut sit purus, justo nisl pharetra. Tincidunt leo aenean dui, varius metus, vel. Maecenas eu rhoncus, est nunc nisi volutpat, amet venenatis faucibus. Enim, vel nunc purus feugiat purus tincidunt neque. Massa ultricies faucibus pellentesque risus duis est."
-            text2="Vivamus at diam nunc non ornare. Sed ultrices pulvinar nunc, lacus sem. Tellus aliquam ut euismod cursus dui lectus. Ut amet, cras volutpat dui. A bibendum viverra eu cras."
+            heading="Distribution of the book, Anomaly, at Temple Secondary School"
+            text1="In 2024, the Lightout HighSchool
+Initiative continued its mission to
+empower and inspire Nigerian teen
+students through music, arts, and
+impactful campaigns, reaching new
+heights in engagement, education, and
+social impact. With a commitment to
+fostering creativity, social and personal
+development, and environmental
+responsibility, LightOut delivered
+transformative experiences to over a
+thousand students across Lagos."
+            text2="The year began witha visit to Temple
+Secondary School, where 400+ students
+were immersed in a unique blend of
+music, arts, and thought-provoking
+discussions about personal growth,
+values such as delayed gratification,
+abstinence, and community
+responsibility. This visit set the tone fora
+year of meaningful interactions and
+engagement."
           />
           {/* Image Section */}
           <Box display={"flex"} justifyContent={"center"}>
@@ -63,42 +79,34 @@ Consectetur feugiat quis hac enim nullam in enim. Tellus nisi dapibus libero rut
               fontSize={["32px", "36px", "48px"]}
               lineHeight={["40px", "50px", "57.6px"]}
               fontFamily="Roboto">
-              Some Cool Heading
+              Climate Action & Recycle Campaign
             </Heading>
             <Text
               color={"#525560"}
               fontWeight={400}
               fontSize={"16px"}
-              lineHeight={"25.6px"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              iusto velit repellendus magni modi quis. Lorem, ipsum dolor sit
-              amet consectetur adipisicing elit. Error est ad iure suscipit
-              recusandae quia magni. Sunt repellendus tempore nobis impedit,
-              amet perspiciatis consequuntur exercitationem numquam saepe
-              voluptates at maiores?
+              lineHeight={"25.6px"}
+              pb={5}>
+              One ofthe year's most notable achievements was the Climate Action
+              and Recycling Campaign Concert held at Falomo Senior High school
+              and Ireti Senior Grammar schools. This event combined electrifying
+              performances with powerful messages about recycling and climate
+              action, inspiring over 1,000 students to adoptsustainable
+              practices. Through recycling exercises and the establishment of
+              collection points at participating schools, the campaign directly
+              contributed to cleaner environments and heightened awareness of
+              SDG 12 (Responsible Consumption and Production) and SDG 13
+              (Climate Action).
             </Text>
-            <List.Root gap={3} p={2} fontWeight={700}>
-              <List.Item>
-                Posuere sed pulvinar enim faucibus justo, cursus.
-              </List.Item>
-              <List.Item>
-                In diam facilisis at sit convallis blandit in.
-              </List.Item>
-              <List.Item>
-                Maecenas odio orci lectus urna ante consequat erat non morbi.
-              </List.Item>
-            </List.Root>
+
             <Text
               color={"#525560"}
               fontWeight={400}
               fontSize={"16px"}
               lineHeight={"25.6px"}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              iusto velit repellendus magni modi quis. Lorem, ipsum dolor sit
-              amet consectetur adipisicing elit. Error est ad iure suscipit
-              recusandae quia magni. Sunt repellendus tempore nobis impedit,
-              amet perspiciatis consequuntur exercitationem numquam saepe
-              voluptates at maiores?
+              Throughout 2024, Lightout's high school tours engaged over 1,400
+              students, fostering creativity and self-expression and supporting
+              students in their educational, social and personal development.
             </Text>
           </Box>
         </Box>

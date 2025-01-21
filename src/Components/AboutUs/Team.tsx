@@ -13,12 +13,12 @@ import { LuFacebook, LuTwitter, LuLinkedin } from "react-icons/lu";
 
 export type TeamMember = {
   name: string;
-  role: string;
+  role?: string;
   image: string;
-  socialLinks: {
-    facebook: string;
-    twitter: string;
-    linkedin: string;
+  socialLinks?: {
+    facebook?: string;
+    twitter?: string;
+    linkedin?: string;
   };
 };
 
@@ -30,11 +30,12 @@ const Team: React.FC<TeamProps> = ({ members }) => {
   return (
     <Box p={10} textAlign="center" bg={"#fff"} color={"#1D2130"}>
       <Heading as="h2" size="xl" mb={4}>
-        Meet our team
+        Schools Reached
       </Heading>
       <Text fontSize="lg" mb={8}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique.
+        With the numerous schools and thousands of students reached, each
+        LightOut edition brings us closer to creating a healthy, educated,
+        responsible and well-balanced Nigerian society.
       </Text>
       <Grid templateColumns={["1fr", "1fr 1fr", "repeat(4, 1fr)"]} gap={6}>
         {members.map((member, index) => (
@@ -46,7 +47,7 @@ const Team: React.FC<TeamProps> = ({ members }) => {
             <Text fontSize="sm" mb={4}>
               {member.role}
             </Text>
-            <Box display="flex" justifyContent="center" gap={2}>
+            {/* <Box display="flex" justifyContent="center" gap={2}>
               <Link
                 href={member.socialLinks.facebook}
                 target="_blank"
@@ -68,7 +69,7 @@ const Team: React.FC<TeamProps> = ({ members }) => {
                 aria-label="LinkedIn">
                 <LuLinkedin color={"#000"} size={20} />
               </Link>
-            </Box>
+            </Box> */}
           </Box>
         ))}
       </Grid>

@@ -21,15 +21,30 @@ const Page1 = () => {
           />
           {/* Second Column */}
           <VStack pt={"40px"}>
-            <Text fontSize="20px" fontWeight={700}>
+            {/* <Text fontSize="20px" fontWeight={700}>
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.
-            </Text>
+            </Text> */}
             <Text fontSize="16px" fontWeight={400}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Suspendisse varius enim elementum tristique.
+              LightOut Highschool Initiative isa CSR Co-Branding platform,
+              harnessing the powerofmusic and arttodrive social impact.
+              <Text>
+                {" "}
+                It hosts musical outreaches and concert experiences for Students
+                across Secondary Schools and colleges, leveraging Music & Art to
+                engage and support students in their educational, social and
+                personal development.{" "}
+              </Text>
+              <Text>
+                The initiative was founded 2017, by Nigerian Musician and
+                Culture Architect, Gaise Baba through hisorganization — 4ó4
+                Projects. So far, 22 editions reaching over 32,000 students have
+                been executed.{" "}
+              </Text>
+              <Text>
+                Lightout focuses on three (3) of the 17 SDGs through the work it
+                does—SDGs3, 4, and 12.
+              </Text>
             </Text>
           </VStack>
         </Grid>

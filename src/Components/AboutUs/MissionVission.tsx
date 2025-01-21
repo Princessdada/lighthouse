@@ -11,14 +11,12 @@ const MissionVision = () => {
             OUR MISSION
           </Text>
           <Text fontSize="xl" fontWeight="bold">
-            We make sure to provide inclusive care for children with special
-            needs
+            Fostering a Responsible and Value-Driven Youth for a Better Society
           </Text>
           <Text fontSize="sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
+            To havea healthy, well-educated and responsible Nigerian society
+            because of the constructive values and habits our young people have
+            imbibed and chosentolive by
           </Text>
         </VStack>
 
@@ -28,13 +26,14 @@ const MissionVision = () => {
             OUR VISION
           </Text>
           <Text fontSize="xl" fontWeight="bold">
-            Provide more inclusive care to children around the world
+            Inspiring Youth Through Music, Art, and Meaningful Engagement
           </Text>
           <Text fontSize="sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat.
+            LightOut High School Initiative creates unforgettable concert
+            experiences across high schools, leveraging music and art as tools
+            for promoting constructive values among students and various youth
+            groups inNigeria. We engage teenage students with fun conversations
+            and activities, and support themin their educational, social
           </Text>
         </VStack>
       </Grid>

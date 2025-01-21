@@ -8,7 +8,14 @@ const Tab3 = () => {
   const readmore = useHandleReadMore();
   const cardData = [
     {
-      title: "Mission smile 1k: Outdoor charity",
+      title: "Temple Secondary School",
+      description: "Ensure sustainable consumption and production patterns.",
+      image: img1,
+      buttonText: "Learn More",
+      onClick: readmore,
+    },
+    {
+      title: "Climate Action & Recycle Campaign",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
       image: img1,
@@ -16,17 +23,9 @@ const Tab3 = () => {
       onClick: readmore,
     },
     {
-      title: "Weekly excursions",
+      title: "Good Health and well-being promotion",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-      image: img1,
-      buttonText: "Learn More",
-      onClick: readmore,
-    },
-    {
-      title: "Monthly public awareness",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
+        "Ensure healthy lives and promote well-being for all at all ages..",
       image: img1,
       buttonText: "Learn More",
       onClick: readmore,
@@ -44,7 +43,7 @@ const Tab3 = () => {
         mb={12}>
         <Section
           subheading="PROJECTS WE HAVE DONE"
-          heading="We are creating a place where children with special needs can thrive"
+          heading="We are creating a place where youths can thrive"
         />
       </Flex>
 
