@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Grid, Text } from "@chakra-ui/react";
 import React from "react";
-import img1 from "../Image/BG Image.png";
+import img1 from "../Image/A student taking the Abstinence Pledge.jpg";
 import useHandleEventsReadMore from "../Hooks/useHandleEventsReadMore";
 
 const Tab5 = () => {
@@ -35,8 +35,7 @@ const Tab5 = () => {
               fontSize={["xl", "2xl"]}
               fontWeight="700"
               mb={4}>
-              You can contribute to provide a place for children with special
-              needs!
+              You can contribute to provide a place for youths and teenagers
             </Text>
 
             {/* Buttons */}

@@ -12,7 +12,7 @@ import award1 from "../Logo/Award badge (4).png";
 import award2 from "../Logo/Award badge.png";
 import award3 from "../Logo/Award badge (1).png";
 import award4 from "../Logo/Award badge (2).png";
-import image from "../Image/Image (4).png";
+import image from "../Image/Group photo of Gaise Baba with students and teachers at the LightOut citywide concert (1).jpg";
 
 const Page2: React.FC = () => {
   return (
@@ -77,7 +77,10 @@ const Page2: React.FC = () => {
           borderRadius="lg"
           boxShadow="sm"
           alignContent={"center"}>
-          <Flex direction={["row", "row"]} gap={8} alignItems="center">
+          <Flex
+            direction={["column", "column", "row"]}
+            gap={8}
+            alignItems="center">
             {/* Text Section */}
             <VStack align="start" gap={4} width="100%">
               <Text fontSize="sm" fontWeight="bold">

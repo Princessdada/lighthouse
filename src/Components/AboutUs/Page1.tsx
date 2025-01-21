@@ -20,7 +20,7 @@ const Page1 = () => {
             heading="We are a non-governmental organization"
           />
           {/* Second Column */}
-          <VStack pt={"40px"}>
+          <VStack pt={["", "", "40px"]}>
             {/* <Text fontSize="20px" fontWeight={700}>
               Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
               Nunc ut sem vitae risus tristique posuere.

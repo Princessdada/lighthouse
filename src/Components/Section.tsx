@@ -23,7 +23,7 @@ const Section: React.FC<SectionProps> = ({
   buttonBg = "#F2C94C",
 }) => {
   return (
-    <Box textAlign={["left"]} padding={10}>
+    <Box textAlign={["left"]} p={[0, 0, 10]}>
       <Flex align="center" gap={4}>
         <Box height="2px" width="72px" bg="#1D2130" borderRadius="full" />
         <Text fontFamily="Roboto" fontWeight={700} fontSize="16px">

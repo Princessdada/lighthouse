@@ -70,7 +70,7 @@ const WhatWeDo = () => {
             subheading="KNOW ABOUT US"
             heading="Empowering Students with Values, Financial Literacy, and Life Skills Through Engaging Concerts"
           />
-          <Text fontSize={"m"} pt={8} lineHeight={"1.8"}>
+          <Text fontSize={"m"} pt={[3, 5, 8]} lineHeight={"1.8"}>
             <Text>
               We organize LightOut concerts across secondary schools and
               colleges in the country.
@@ -123,7 +123,7 @@ const WhatWeDo = () => {
       </Box>
       <Box bg={"#FCEDC6"} color={"#1D2130"}>
         {/* Header */}
-        <HStack gap={4} textAlign="left" p={12}>
+        <HStack gap={4} textAlign="left" p={[5, 8, "12"]}>
           <Text fontSize="3xl" fontWeight="700">
             What we do for our kids with special needs
           </Text>
